@@ -6,17 +6,7 @@
             $nomeimagem = "";
             if(file_exists("./img/contatos/".md5($contato->id).".jpg")) {
                 $nomeimagem = "./img/contatos/".md5($contato->id).".jpg";
-            } elseif (file_exists("./img/contatos/".md5($contato->id).".png")) {
-                $nomeimagem = "./img/contatos/".md5($contato->id).".png";
-            } elseif (file_exists("./img/contatos/".md5($contato->id).".gif")) {
-                $nomeimagem =  "./img/contatos/".md5($contato->id).".gif";
-            } elseif (file_exists("./img/contatos/".md5($contato->id).".webp")) {
-                $nomeimagem = "./img/contatos/".md5($contato->id).".webp";
-            } elseif (file_exists("./img/contatos/".md5($contato->id).".jpeg")) {
-                $nomeimagem = "./img/contatos/".md5($contato->id).".jpeg";
-            } else {
-                $nomeimagem = "./img/contatos/semfoto.webp";
-            }
+        
             //echo $nomeimagem;
         @endphp
 

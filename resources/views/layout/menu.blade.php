@@ -5,10 +5,10 @@
           <a class="nav-link active" href="{{url('/')}}">Home</a>
         </li>
        <li class="nav-item">
-          <a class="nav-link" href="{{url('joias/')}}">Restaurantes</a>
+          <a class="nav-link" href="{{url('joias/')}}">Jóias</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url('categorias/')}}">Categorias de Restaurantes</a>
+          <a class="nav-link" href="{{url('categorias/')}}">Categorias de Jóias</a>
         </li>
       </ul>
     </div>
