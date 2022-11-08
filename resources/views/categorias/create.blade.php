@@ -1,24 +1,20 @@
-@extends('layouts.app')
-@section('title','Criar novo Contato')
+@extends('layout.app')
+@section('title','Criar nova Categoria')
 @section('content')
-    <h1>Criar novo Contato</h1>
-    @if(count($errors) > 0)
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>
-                        {{$error}}
-                    </li>
-                @endforeach
-            </ul>
+<h1>Criar nova Categoria</h1>
+<br/>
+<br>
+{{Form::open(['route' => 'categorias.store', 'method' => 'POST'])}}
+<div class="div-create-categoria">
+    {{Form::label('descricao', 'Descrição')}}
+        <br>    
+        {{Form::text('descricao','',['class'=>' form-create-categoria','required','placeholder'=>'Nome da Categoria'])}}
+        <br/>
+        <div>
+            {{Form::submit('Salvar',['class'=>'btn btn-success'])}}
+            <a href="{{url('categorias/')}}" class="btn btn-secondary">Voltar</a>
         </div>
-    @endif
-    <br />
-    {{Form::open(['route' => 'contatos.store', 'method' => 'POST','enctype'=>'multipart/form-data'])}}
-        {{Form::label('descricao', 'Descrição')}}
-        {{Form::text('descrição','',['class'=>'form-control','required','placeholder'=>'Descrição'])}}
-        <br />
-        {{Form::submit('Salvar',['class'=>'btn btn-success'])}}
-        {!!Form::button('Cancelar',['onclick'=>'javascript:history.go(-1)', 'class'=>'btn btn-secondary'])!!}
+        
     {{Form::close()}}
+</div>
 @endsection
