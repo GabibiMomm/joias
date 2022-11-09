@@ -58,6 +58,7 @@ class CategoriaController extends Controller
         $categoria = new Categoria();
         $categoria->descricao = $request->input('descricao');
         if($categoria->save()) {
+            
             return redirect('categorias');
         }
     }
