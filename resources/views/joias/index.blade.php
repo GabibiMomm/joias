@@ -23,7 +23,7 @@
                 <td class="td-index-categoria">
                     <a href="{{url('joias/'.$joia->id)}}">{{$joia->nome}}</a>
                 </td>
-                <td class="td-index-categoria">{{$joia->categoria}}</td>
+                <td class="td-index-categoria">{{($joia->categoriad->descricao)}}</td>
                 <td>{{$joia->descricao}}</td>
                 <td>{{$joia->preco}}</td>
             </tr>

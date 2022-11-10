@@ -6,7 +6,7 @@
         <h4>
             <li>ID: {{$joia->id}}</li>
             <li>Nome: {{$joia->nome}}</li>
-            <li>Categoria: {{$joia->categoria}}</li>
+            <li>Categoria: {{($joia->categoriad->descricao)}}</li>
             <li>Imagem: {{$joia->imagem}}</li>
             <li>Preço: {{$joia->preco}}</li>
         </h4>
