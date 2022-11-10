@@ -1,5 +1,12 @@
 @extends('layout.app')
 @section('title','Sistema Joias')
 @section('content')
-<h1>Loja de Acessórios</h1>
+<div class="corpo">
+    <center>
+    <br>
+    <h1 style="font-family: Times New Roman; color: goldenrod;">Joalheria</h1>
+    </center>
+</div>
+
+
 @endsection

@@ -21,4 +21,5 @@
     {{Form::submit('Excluir',['class'=>'btn btn-danger'])}}
     <a href="{{url('joias/')}}" class="btn btn-secondary">Voltar</a>
     {{Form::close()}}
+    
 @endsection
